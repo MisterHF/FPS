@@ -11,10 +11,12 @@ public class PlayerMotor : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool isGrounded;
+    
 
     public float gravity = -9.8f;
     public float speed = 5f;
     public float jumpheight = 1.5f;
+    
 
     void Start()
     {
@@ -45,6 +47,6 @@ public class PlayerMotor : MonoBehaviour
     {
         playerVelocity.y = Mathf.Sqrt(jumpheight * -3.0f * gravity);
     }
-   
+
 
 }
