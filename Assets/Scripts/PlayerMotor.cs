@@ -42,11 +42,13 @@ public class PlayerMotor : MonoBehaviour
         controller.Move(playerVelocity * Time.deltaTime);
 
     }
-    
+
     public void Jump()
     {
-        playerVelocity.y = Mathf.Sqrt(jumpheight * -3.0f * gravity);
+        if (isGrounded)
+        {
+            playerVelocity.y = Mathf.Sqrt(jumpheight * -3.0f * gravity);
+        }
+
     }
-
-
 }
