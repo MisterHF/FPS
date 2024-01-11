@@ -7,14 +7,20 @@ public class Shoot : MonoBehaviour
     public ParticleSystem FireParticules;
     public Transform FirePoint;
     public GameObject Fire;
-   // public GameObject HitPoint;
-    // Update is called once per frame
+    // public GameObject HitPoint;
+    
+
+    private void Start()
+    {
+        FireParticules.Stop();
+    }
+
     void Update()
     {
        if (Input.GetMouseButtonDown(0))
        {
             Shooting();
-            //ClearOldParticles();
+            
             
             
         }
@@ -31,7 +37,7 @@ public class Shoot : MonoBehaviour
 
         RaycastHit hit;
 
-        if(Physics.Raycast(FirePoint.position, Camera.main.transform.forward, out hit, 100))
+        if(Physics.Raycast(FirePoint.position, Camera.main.transform.forward, out hit, 200))
         {
             Debug.DrawRay(FirePoint.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.red);
             Debug.Log(hit.collider.name);
