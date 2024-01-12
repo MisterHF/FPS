@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class SpawnTraget : MonoBehaviour
 {
-    ScoreManager scoreManager;
+    
     [SerializeField] public GameObject target;
     [SerializeField] private GameObject MapSurface;
 
-    int MaxTarget = 50;
+    int MaxTarget = 10;
     bool TargetCreated = false;
 
 
     private void Start()
     {
         CreateTarget();
+        bool TargetCreated = false;
     }
     private void CreateTarget()
     {
@@ -28,9 +29,4 @@ public class SpawnTraget : MonoBehaviour
             TargetCreated = true;
         }
     }
-
-    //private void Update()
-    //{
-    //    if (MaxTarget == scoreManager)
-    //}
 }

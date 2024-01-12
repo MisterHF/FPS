@@ -21,7 +21,7 @@ public class PlayerMotor : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-
+        isGrounded = true;
     }
 
     void Update()

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8363894616722021937}
   - component: {fileID: 8064210184294236289}
   - component: {fileID: 2607049774627520087}
-  - component: {fileID: 3532117991391388208}
   m_Layer: 5
   m_Name: ButtonSettings
   m_TagString: Untagged
@@ -134,20 +133,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3532117991391388208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612993707274862467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cfb14463cfb3294aa32c01c8808bc82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameIsPaused: 0
-  pauseMenuUI: {fileID: 0}
 --- !u!1 &3536239128295596915
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +413,6 @@ GameObject:
   - component: {fileID: 2595031626321315659}
   - component: {fileID: 3657514736706986474}
   - component: {fileID: 7867062132545653410}
-  - component: {fileID: 6808790934980192019}
   m_Layer: 5
   m_Name: ButtonQuit
   m_TagString: Untagged
@@ -538,7 +522,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6808790934980192019}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InputPauseMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -550,20 +534,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6808790934980192019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4261076585274136921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cfb14463cfb3294aa32c01c8808bc82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameIsPaused: 0
-  pauseMenuUI: {fileID: 0}
 --- !u!1 &4373366899486259437
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +625,6 @@ GameObject:
   - component: {fileID: 6365240333830981365}
   - component: {fileID: 525589885845513466}
   - component: {fileID: 2088622334859030582}
-  - component: {fileID: 5658699933527980869}
   m_Layer: 5
   m_Name: ButtonResume
   m_TagString: Untagged
@@ -777,20 +746,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5658699933527980869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5652502561216023383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cfb14463cfb3294aa32c01c8808bc82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameIsPaused: 0
-  pauseMenuUI: {fileID: 0}
 --- !u!1 &7139752557056877381
 GameObject:
   m_ObjectHideFlags: 0
